@@ -6,81 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <link href="../assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/stagexl.css" rel="stylesheet" />
-
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-39591161-1']);
-        _gaq.push(['_trackPageview']);
-
-        (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="brand" href="../index.html"><strong>StageXL</strong></a>
-                <ul class="nav">
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Showcase<b
-                        class="caret"></b> </a>
-                        <ul class="dropdown-menu">
-                            <li class="nav-header">Games</li>
-                            <li><a href="../games/escape/escape.html">&nbsp;Escape</a></li>
-                            <li><a href="../games/supersonic/supersonic.html">&nbsp;Supersonic</a></li>
-                            <li class="divider"></li>
-                            <li class="nav-header">Demos</li>
-                            <li><a href="../demos/performance.html">&nbsp;Performance</a></li>
-                            <li><a href="../demos/masking.html">&nbsp;Masking</a></li>
-                            <li><a href="flipbook.html">&nbsp;FlipBook</a></li>
-                            <li><a href="../demos/text.html">&nbsp;Text</a></li>
-                            <li><a href="../demos/filter.html">&nbsp;Filter</a></li>
-                            <li><a href="../demos/sound.html">&nbsp;Sound</a></li>
-                            <li><a href="../demos/tweener.html">&nbsp;Tweener</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Runtimes<b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../runtimes/flash_professional.html">Flash Professional</a></li>
-                            <li><a href="../runtimes/texture_packer.html">Texture Packer</a></li>
-                            <li><a href="../runtimes/particle_emitter.html">Particle Emitter</a></li>
-                            <li><a href="../runtimes/flump.html">Flump</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Documents<b
-                        class="caret"></b> </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../docs/getting-started.html">Getting Started</a></li>
-                            <li><a href="../docs/wiki-articles.html">Wiki Articles</a></li>
-                            <li><a href="../docs/api/stagexl.html" target="_blank">API Reference</a></li>
-                            <li><a href="../docs/actionscript-dart.html">ActionScript&nbsp;<i class="icon-hand-right"></i>&nbsp;Dart</a></li>
-                            <li><a href="../docs/transitions.html">Transition Functions</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Help<b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="../forum.html">Forum</a></li>
-                            <li><a href="../faq.html">FAQ</a></li>
-                            <li><a href="../about.html">About</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container">
         <h1>Performance (Flash Version)</h1>
         <p> This benchmark tests how many frames per second the browser is able to draw for a given number of
             flags. You can increase the number of flags to see the effect on the frame rate. A modern desktop 
@@ -88,15 +15,8 @@
             This benchmark depends on four important factors: The performance of your GPU for the draw 
             calls, the performance of your CPU for the animation, the JavaScript code compiled by dart2js and 
             last but not least the browser you are using.</p>
-            <p>Compare the benchmark numbers with the <a href="performance.html">HTML5 Version</a>.</p>
-        <br />
-        <div class="tabbable">
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#demoShow" data-toggle="tab"><strong>Demo (Flash)</strong></a></li>
-            </ul>
 
-            <div class="tab-content">
-                <div class="tab-pane active" id="demoShow">
+        <br />
                     <div class="row">
                         <div class="span2">
                             <button id="minus100" class="btn btn-large btn-block btn-primary"><i class="icon-minus icon-white"></i> 100</button>
@@ -112,25 +32,9 @@
                         </div>
                     </div>
 
-                    <div id="perfDemo">
-                        <h1>Performance Demo</h1>
-                        <p>
-                            <a href="http://www.adobe.com/go/getflashplayer">
-                                <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-                            </a>
-                        </p>
-                    </div>
                     <hr />
                     Credits for this beautiful flags to: <a href="http://www.icondrawer.com" target="_blank">www.IconDrawer.com</a>.
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script type="text/javascript" src="../assets/js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript" src="../assets/js/swfobject.js"></script>
     <script type="text/javascript">
 
         function setFps(value)
@@ -154,7 +58,7 @@
             id: "perfDemo"
         };
 
-        swfobject.embedSWF("flash/FlashPerformanceDemo.swf", "perfDemo", "940", "500", "9.0.115", "flash/expressInstall.swf", flashvars, params, attributes);
+        swfobject.embedSWF("FlashPerformanceDemo.swf", "perfDemo", "940", "500", "9.0.115", "flash/expressInstall.swf", flashvars, params, attributes);
 
         $("#minus100").on('click', function() {
             swfobject.getObjectById("perfDemo").removeFlags(100);
@@ -168,3 +72,4 @@
 
 </body>
 </html>
+
